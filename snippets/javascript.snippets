@@ -154,3 +154,15 @@ snippet sing
 
 		return instance;
 	}
+
+#for express route exports
+snippet exp
+  exports.${1:function_name} = function( req, res, next ){
+    ${2: //  code ... }
+  }
+
+# for node exports
+snippet exp
+  exports.${1:function_name} = function( ${2:argument} ){
+    ${3: // code... }
+  }
